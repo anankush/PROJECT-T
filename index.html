@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travelstar - Premium Travel & Destinations. Explore beautiful domestic and international locations.">
+    <title>Travelstar | Premium Travel & Destinations</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glow Blobs -->
+    <div class="glow-blob blob-1"></div>
+    <div class="glow-blob blob-2"></div>
+    <div class="glow-blob blob-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo">
+            <i class="fa-solid fa-compass"></i>
+            <span>Travelstar</span>
+        </div>
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#booking">Book Now</a>
+        </nav>
+        <div class="header-action">
+            <a href="#destinations" class="btn btn-secondary">Explore</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <span class="hero-subtitle">Adventure Awaits</span>
+                <h1 class="hero-title">Explore The World's <br><span>Best Destinations</span></h1>
+                <p class="hero-description">Discover stunning getaways, plan your perfect trip, and experience travel like never before. Hosted and delivered live over a secure server network.</p>
+                
+                <!-- Quick Search Bar -->
+                <div class="search-bar">
+                    <div class="search-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="search-input-group">
+                            <label>Where to?</label>
+                            <input type="text" id="quickSearchInput" placeholder="Enter destination...">
+                        </div>
+                    </div>
+                    <div class="search-item">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <div class="search-input-group">
+                            <label>When?</label>
+                            <input type="date" id="quickSearchDate">
+                        </div>
+                    </div>
+                    <div class="search-item">
+                        <i class="fa-solid fa-user-group"></i>
+                        <div class="search-input-group">
+                            <label>Guests</label>
+                            <select id="quickSearchGuests">
+                                <option value="1">1 Guest</option>
+                                <option value="2" selected>2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5+ Guests</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-search" id="quickSearchBtn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Search</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinations Section -->
+        <section id="destinations" class="destinations-section">
+            <div class="section-header">
+                <span class="section-subtitle">Curated Trips</span>
+                <h2 class="section-title">Featured Destinations</h2>
+                <p class="section-desc">Browse through our handpicked selections of both beautiful Indian heritage spots and breathtaking international escapes.</p>
+                
+                <!-- Category Filter Buttons -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All Places</button>
+                    <button class="filter-btn" data-category="india">India</button>
+                    <button class="filter-btn" data-category="international">International</button>
+                </div>
+            </div>
+
+            <!-- Destinations Grid -->
+            <div class="destinations-grid" id="destinationsGrid">
+                <!-- Kashmir (India) -->
+                <div class="destination-card" data-category="india" data-name="kashmir">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=600&q=80" alt="Kashmir, India">
+                        <span class="badge badge-domestic">India</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="duration"><i class="fa-regular fa-clock"></i> 6 Days</span>
+                        </div>
+                        <h3>Chinar Valley, Kashmir</h3>
+                        <p>Experience the paradise on earth with snow-capped mountains, beautiful Shikara rides on Dal Lake, and colorful gardens.</p>
+                        <div class="card-footer">
+                            <div class="price">
+                                <span class="price-label">From</span>
+                                <span class="price-val">₹14,500</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary book-trigger" data-dest="Chinar Valley, Kashmir">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kyoto (International) -->
+                <div class="destination-card" data-category="international" data-name="kyoto">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80" alt="Kyoto, Japan">
+                        <span class="badge badge-intl">International</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                            <span class="duration"><i class="fa-regular fa-clock"></i> 5 Days</span>
+                        </div>
+                        <h3>Fushimi Inari, Kyoto</h3>
+                        <p>Walk through thousands of vermilion torii gates, explore ancient temples, and immerse yourself in Japanese cultural heritage.</p>
+                        <div class="card-footer">
+                            <div class="price">
+                                <span class="price-label">From</span>
+                                <span class="price-val">$1,250</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary book-trigger" data-dest="Fushimi Inari, Kyoto">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Goa (India) -->
+                <div class="destination-card" data-category="india" data-name="goa">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Goa, India">
+                        <span class="badge badge-domestic">India</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="rating"><i class="fa-solid fa-star"></i> 4.7</span>
+                            <span class="duration"><i class="fa-regular fa-clock"></i> 4 Days</span>
+                        </div>
+                        <h3>Palolem Beach, Goa</h3>
+                        <p>Enjoy golden sands, scenic sunset views, thrilling water sports, and vibrant beach shacks along the beautiful coastline.</p>
+                        <div class="card-footer">
+                            <div class="price">
+                                <span class="price-label">From</span>
+                                <span class="price-val">₹8,999</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary book-trigger" data-dest="Palolem Beach, Goa">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paris (International) -->
+                <div class="destination-card" data-category="international" data-name="paris">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" alt="Paris, France">
+                        <span class="badge badge-intl">International</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="duration"><i class="fa-regular fa-clock"></i> 7 Days</span>
+                        </div>
+                        <h3>Eiffel Tower, Paris</h3>
+                        <p>Visit the city of love, explore world-renowned museums, walk down the Champs-Élysées, and admire the majestic Eiffel Tower.</p>
+                        <div class="card-footer">
+                            <div class="price">
+                                <span class="price-label">From</span>
+                                <span class="price-val">$1,890</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary book-trigger" data-dest="Eiffel Tower, Paris">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kerala (India) -->
+                <div class="destination-card" data-category="india" data-name="kerala">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=600&q=80" alt="Kerala, India">
+                        <span class="badge badge-domestic">India</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="rating"><i class="fa-solid fa-star"></i> 4.8</span>
+                            <span class="duration"><i class="fa-regular fa-clock"></i> 5 Days</span>
+                        </div>
+                        <h3>Munnar Gardens, Kerala</h3>
+                        <p>Explore lush green tea plantations, tranquil backwaters in houseboats, and rich biodiversity in God's Own Country.</p>
+                        <div class="card-footer">
+                            <div class="price">
+                                <span class="price-label">From</span>
+                                <span class="price-val">₹11,200</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary book-trigger" data-dest="Munnar Gardens, Kerala">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bali (International) -->
+                <div class="destination-card" data-category="international" data-name="bali">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" alt="Bali, Indonesia">
+                        <span class="badge badge-intl">International</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="duration"><i class="fa-regular fa-clock"></i> 6 Days</span>
+                        </div>
+                        <h3>Ubud Temple, Bali</h3>
+                        <p>Immerse yourself in serenity with iconic rice terraces, tropical volcanic landscapes, and ancient spiritual heritage.</p>
+                        <div class="card-footer">
+                            <div class="price">
+                                <span class="price-label">From</span>
+                                <span class="price-val">$850</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary book-trigger" data-dest="Ubud Temple, Bali">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agra (India) -->
+                <div class="destination-card" data-category="india" data-name="agra">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=600&q=80" alt="Taj Mahal, Agra">
+                        <span class="badge badge-domestic">India</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="rating"><i class="fa-solid fa-star"></i> 4.9</span>
+                            <span class="duration"><i class="fa-regular fa-clock"></i> 2 Days</span>
+                        </div>
+                        <h3>Taj Mahal, Agra</h3>
+                        <p>Behold one of the seven wonders of the world, a breathtaking symbol of eternal love made of pristine white marble.</p>
+                        <div class="card-footer">
+                            <div class="price">
+                                <span class="price-label">From</span>
+                                <span class="price-val">₹3,500</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary book-trigger" data-dest="Taj Mahal, Agra">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiss Alps (International) -->
+                <div class="destination-card" data-category="international" data-name="swiss">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Swiss Alps, Switzerland">
+                        <span class="badge badge-intl">International</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="rating"><i class="fa-solid fa-star"></i> 5.0</span>
+                            <span class="duration"><i class="fa-regular fa-clock"></i> 5 Days</span>
+                        </div>
+                        <h3>Zermatt, Swiss Alps</h3>
+                        <p>Ski through breathtaking glaciers, ride scenic trains, and view the iconic Matterhorn mountain in pristine Switzerland.</p>
+                        <div class="card-footer">
+                            <div class="price">
+                                <span class="price-label">From</span>
+                                <span class="price-val">$2,400</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary book-trigger" data-dest="Zermatt, Swiss Alps">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking" class="booking-section">
+            <div class="booking-container">
+                <div class="booking-info">
+                    <span class="info-subtitle">Get in Touch</span>
+                    <h2>Start Your Next Adventure with Travelstar</h2>
+                    <p>Have questions or ready to book? Complete the booking inquiry form. Our team will verify network communication and process your travel itinerary instantly.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>support@travelstar.local</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-server"></i></div>
+                            <div>
+                                <h4>Server Port</h4>
+                                <p>HTTP Port: 80 / FTP Port: 21</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Booking Form Card -->
+                <div class="booking-card">
+                    <h3>Booking Inquiry Form</h3>
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="+91 98765 43210" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Select Destination</label>
+                            <select id="destination" required>
+                                <option value="" disabled selected>Choose a destination...</option>
+                                <optgroup label="India (Domestic)">
+                                    <option value="Chinar Valley, Kashmir">Chinar Valley, Kashmir</option>
+                                    <option value="Palolem Beach, Goa">Palolem Beach, Goa</option>
+                                    <option value="Munnar Gardens, Kerala">Munnar Gardens, Kerala</option>
+                                    <option value="Taj Mahal, Agra">Taj Mahal, Agra</option>
+                                </optgroup>
+                                <optgroup label="International">
+                                    <option value="Fushimi Inari, Kyoto">Fushimi Inari, Kyoto</option>
+                                    <option value="Eiffel Tower, Paris">Eiffel Tower, Paris</option>
+                                    <option value="Ubud Temple, Bali">Ubud Temple, Bali</option>
+                                    <option value="Zermatt, Swiss Alps">Zermatt, Swiss Alps</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="travelDate">Travel Date</label>
+                                <input type="date" id="travelDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Number of Guests</label>
+                                <input type="number" id="guests" min="1" max="20" value="2" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Submit Booking Request</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Credit Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <i class="fa-solid fa-compass"></i>
+                <span>Travelstar</span>
+            </div>
+            <p>Data Communication & Networks Mini Project — Web Server Setup, Hosting & Automated FTP CI/CD Pipeline.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Travelstar Travel Project. Served securely over HTTP.</p>
+        </div>
+    </footer>
+
+    <!-- Fullscreen Loading Spinner Overlay -->
+    <div class="loader-overlay" id="loaderOverlay">
+        <div class="loader-container">
+            <div class="spinner"></div>
+            <p id="loaderMessage">Connecting to server...</p>
+        </div>
+    </div>
+
+    <!-- Interactive Success Toast -->
+    <div class="success-toast" id="successToast">
+        <div class="toast-header">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Booking Request Transmitted!</span>
+        </div>
+        <div class="toast-body">
+            <p><strong>Status:</strong> HTTP 201 Created</p>
+            <p id="toastDetails"></p>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
