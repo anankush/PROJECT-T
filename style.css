@@ -1142,6 +1142,70 @@ a {
 }
 
 /* ==========================================
+   Developer & Team Profiles
+   ========================================== */
+.team-avatar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2.5rem;
+    height: auto;
+}
+
+.team-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: var(--accent-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.75rem;
+    color: #ffffff;
+    box-shadow: 0 10px 25px rgba(6, 182, 212, 0.25);
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition-smooth);
+}
+
+.destination-card:hover .team-avatar {
+    transform: scale(1.08) rotate(5deg);
+    box-shadow: 0 15px 30px rgba(6, 182, 212, 0.4);
+}
+
+.team-role {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team-details {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.team-details li {
+    position: relative;
+    padding-left: 1.25rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.6rem;
+    line-height: 1.4;
+}
+
+.team-details li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-secondary);
+    font-weight: 800;
+}
+
+/* ==========================================
    Light Mode System Preference Override
    ========================================== */
 @media (prefers-color-scheme: light) {
@@ -1273,6 +1337,23 @@ a {
 
     .search-feedback {
         background: rgba(255, 255, 255, 0.5);
+    }
+
+    /* Team page light overrides */
+    .team-avatar-wrapper {
+        background: rgba(15, 23, 42, 0.02);
+    }
+    
+    .team-avatar {
+        border-color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .team-role {
+        color: var(--accent-secondary);
+    }
+
+    .team-details li::before {
+        color: var(--accent-primary);
     }
 }
 
