@@ -12,8 +12,8 @@ Below is the list of team contributors and their academic roles, outlining their
 
 | Name | Role | Core Contributions |
 | :--- | :--- | :--- |
-| **Nayan Ghosh** | Lead Full-Stack Developer & Networks Administrator | <ul><li>Configured XAMPP Apache local web server.</li><li>Designed client-side Wikipedia REST API search logic.</li><li>Established Git repository integration.</li><li>Configured GitHub Actions automated FTP CI/CD pipeline for live hosting on InfinityFree.</li></ul> |
-| **Pranjal Das Sharma** | Version Control Co-Lead & Systems Integrity Engineer | <ul><li>Managed Git branching, merging, and conflicts resolution.</li><li>Audited sequential logic flow for simulated network protocol layers (TCP/HTTP payloads).</li><li>Ensured viewport layout optimization for mobile devices.</li></ul> |
-| **Chandan Pal** | Quality Assurance & Network Testing Specialist | <ul><li>Formulated testing procedures for local and global search APIs.</li><li>Conducted browser compatibility tests across desktop and mobile viewports.</li><li>Audited mobile navigation drawers and click-outside event listeners.</li></ul> |
-| **Kunal Das** | Technical Documentation Specialist & Release Engineer | <ul><li>Synthesized group development files and compiled release notes.</li><li>Audited structural integration of XAMPP server configuration documentation.</li><li>Merged and formatted code files across versions.</li></ul> |
-| **Simi Mallick** | Technical Writer & Project Coordinator | <ul><li>Authored project introductory abstracts and documentation indices.</li><li>Researched client-server paradigms and protocol frameworks (HTTP/TCP).</li><li>Structured formatting for academic reports.</li></ul> |
+| **Nayan Ghosh** | Lead Full-Stack Developer | <ul><li>Core website coding (HTML, CSS, JS).</li><li>Local hosting configuration (XAMPP).</li><li>GitHub collaboration & deployment.</li></ul> |
+| **Pranjal Das Sharma** | Systems Integrity Engineer | <ul><li>GitHub collaboration with Nayan.</li><li>Check web system integrity & sequencing.</li></ul> |
+| **Chandan Pal** | Web Testing Specialist | <ul><li>Conducted web testing and checks.</li><li>Verified mobile responsiveness.</li></ul> |
+| **Kunal Das** | Documentation & Integration Specialist | <ul><li>Documentation merging & management.</li><li>Check proper document integration.</li></ul> |
+| **Simi Mallick** | Technical Writer | <ul><li>Written project introduction & abstract.</li><li>Create index & documentation drafts.</li></ul> |

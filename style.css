@@ -1109,7 +1109,8 @@ a {
         width: 100%;
     }
 
-    .destinations-section {
+    .destinations-section,
+    .team-section {
         padding: 60px 4%;
     }
 
@@ -1144,6 +1145,34 @@ a {
 /* ==========================================
    Developer & Team Profiles
    ========================================== */
+.team-section {
+    padding: 120px 6%;
+    position: relative;
+    z-index: 10;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.team-card {
+    flex: 1 1 300px;
+    max-width: 380px;
+    min-height: 440px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-back {
+    display: inline-flex !important;
+}
+
 .team-avatar-wrapper {
     display: flex;
     align-items: center;
