@@ -1,0 +1,38 @@
+# --- OS Files ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- System & Editor Configurations ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# --- Dependencies & Package Managers ---
+node_modules/
+bower_components/
+jspm_packages/
+
+# --- Build, Output, and Cache ---
+bin/
+obj/
+dist/
+build/
+out/
+target/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# --- Environments and Sensitive Data (Crucial) ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
