@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Travelstar - Meet our Development and Networks Administration Team.">
     <title>Developer Team | Travelstar</title>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Background Glow Blobs -->
     <div class="glow-blob blob-1"></div>
@@ -30,7 +34,8 @@
             <span>Travelstar</span>
         </a>
         <div class="header-action">
-            <a href="index.html" class="btn btn-secondary btn-back"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+            <a href="index.html" class="btn btn-secondary btn-back"><i class="fa-solid fa-arrow-left"></i> Back to
+                Home</a>
         </div>
     </header>
 
@@ -39,99 +44,132 @@
             <div class="section-header">
                 <span class="section-subtitle">Project Members</span>
                 <h2 class="section-title">Development & Networks Team</h2>
-                <p class="section-desc">Meet the team behind Travelstar. Formulated for the Data Communication & Networks Mini Project, integrating local server configurations, public hosting, and automated pipelines.</p>
+                <p class="section-desc">Meet the team behind Travelstar. Formulated for the Data Communication &
+                    Networks Mini Project, integrating local server configurations, public hosting, and automated
+                    pipelines.</p>
+            </div>
+
+            <!-- Interactive Category Filter -->
+            <div class="filter-buttons" style="margin-top: 1.5rem; margin-bottom: 3.5rem;">
+                <button class="filter-btn active" data-filter="all"><i class="fa-solid fa-users"></i> All
+                    Members</button>
+                <button class="filter-btn" data-filter="dev"><i class="fa-solid fa-code"></i> Dev & Hosting</button>
+                <button class="filter-btn" data-filter="research"><i class="fa-solid fa-microscope"></i> Research &
+                    Testing</button>
+                <button class="filter-btn" data-filter="docs"><i class="fa-solid fa-file-word"></i>
+                    Documentation</button>
             </div>
 
             <!-- Team Members Grid -->
             <div class="team-grid">
-                
+
                 <!-- Nayan Ghosh -->
-                <div class="destination-card team-card">
+                <div class="destination-card team-card" data-category="dev">
                     <div class="card-img-wrapper team-avatar-wrapper">
                         <div class="team-avatar">
                             <i class="fa-solid fa-laptop-code"></i>
                         </div>
-                        <span class="badge badge-domestic">Lead Developer</span>
+                        <span class="badge badge-intl">Lead Developer</span>
                     </div>
                     <div class="card-content">
                         <h3>Nayan Ghosh</h3>
+                        <div class="roll-badge">
+                            <i class="fa-solid fa-id-card"></i> ID: 27631725021
+                        </div>
                         <p class="team-role">Lead Full-Stack Developer</p>
                         <ul class="team-details">
-                            <li>Core website coding (HTML, CSS, JS).</li>
-                            <li>Local hosting configuration (XAMPP).</li>
-                            <li>GitHub collaboration & deployment.</li>
+                            <li><i class="fa-solid fa-code"></i> Core website coding (HTML, CSS, JS)</li>
+                            <li><i class="fa-solid fa-gauge-high"></i> Time Complexity Analysis</li>
+                            <li><i class="fa-solid fa-globe"></i> Global Webserver Host Configuration</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Pranjal Das Sharma -->
-                <div class="destination-card team-card">
+                <div class="destination-card team-card" data-category="dev">
                     <div class="card-img-wrapper team-avatar-wrapper">
                         <div class="team-avatar" style="background: linear-gradient(135deg, #a855f7 0%, #6366f1 100%);">
-                            <i class="fa-solid fa-code-merge"></i>
+                            <i class="fa-solid fa-network-wired"></i>
                         </div>
-                        <span class="badge badge-intl">Systems Integrity</span>
+                        <span class="badge badge-domestic">Systems Integrity</span>
                     </div>
                     <div class="card-content">
                         <h3>Pranjal Das Sharma</h3>
+                        <div class="roll-badge">
+                            <i class="fa-solid fa-id-card"></i> ID: 27631724005
+                        </div>
                         <p class="team-role">Systems Integrity Engineer</p>
                         <ul class="team-details">
-                            <li>GitHub collaboration with Nayan.</li>
-                            <li>Check web system integrity & sequencing.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Chandan Pal -->
-                <div class="destination-card team-card">
-                    <div class="card-img-wrapper team-avatar-wrapper">
-                        <div class="team-avatar" style="background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);">
-                            <i class="fa-solid fa-vial-circle-check"></i>
-                        </div>
-                        <span class="badge badge-domestic">Testing</span>
-                    </div>
-                    <div class="card-content">
-                        <h3>Chandan Pal</h3>
-                        <p class="team-role">Web Testing Specialist</p>
-                        <ul class="team-details">
-                            <li>Conducted web testing and checks.</li>
-                            <li>Verified mobile responsiveness.</li>
+                            <li><i class="fa-brands fa-github"></i> GitHub Link & Collaboration Setup</li>
+                            <li><i class="fa-solid fa-server"></i> Local Webserver Host (XAMPP)</li>
+                            <li><i class="fa-solid fa-right-left"></i> System Input & Output Verification</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Kunal Das -->
-                <div class="destination-card team-card">
+                <div class="destination-card team-card" data-category="research">
                     <div class="card-img-wrapper team-avatar-wrapper">
                         <div class="team-avatar" style="background: linear-gradient(135deg, #f59e0b 0%, #d946ef 100%);">
-                            <i class="fa-solid fa-file-shield"></i>
+                            <i class="fa-solid fa-diagram-project"></i>
                         </div>
-                        <span class="badge badge-intl">Docs Merge</span>
+                        <span class="badge badge-domestic">System Design</span>
                     </div>
                     <div class="card-content">
                         <h3>Kunal Das</h3>
-                        <p class="team-role">Documentation & Integration Specialist</p>
+                        <div class="roll-badge">
+                            <i class="fa-solid fa-id-card"></i> ID: 27631725018
+                        </div>
+                        <p class="team-role">System Architect & Integration</p>
                         <ul class="team-details">
-                            <li>Documentation merging & management.</li>
-                            <li>Check proper document integration.</li>
+                            <li><i class="fa-solid fa-route"></i> Algorithm Design</li>
+                            <li><i class="fa-solid fa-draw-polygon"></i> Flowchart Architecture</li>
+                            <li><i class="fa-solid fa-file-import"></i> Documentation Merging & Management</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Simi Mallick -->
-                <div class="destination-card team-card">
+                <div class="destination-card team-card" data-category="docs">
                     <div class="card-img-wrapper team-avatar-wrapper">
                         <div class="team-avatar" style="background: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);">
                             <i class="fa-solid fa-pen-nib"></i>
                         </div>
-                        <span class="badge badge-domestic">Writer</span>
+                        <span class="badge badge-intl">Documentation Lead</span>
                     </div>
                     <div class="card-content">
                         <h3>Simi Mallick</h3>
-                        <p class="team-role">Technical Writer</p>
+                        <div class="roll-badge">
+                            <i class="fa-solid fa-id-card"></i> ID: 27631725022
+                        </div>
+                        <p class="team-role">Technical Writer & Editor</p>
                         <ul class="team-details">
-                            <li>Written project introduction & abstract.</li>
-                            <li>Create index & documentation drafts.</li>
+                            <li><i class="fa-solid fa-book-open"></i> Project Introduction Section</li>
+                            <li><i class="fa-solid fa-list-ol"></i> Indexing & Structure Setup</li>
+                            <li><i class="fa-solid fa-flag-checkered"></i> Project Conclusion Section</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Chandan Pal -->
+                <div class="destination-card team-card" data-category="research">
+                    <div class="card-img-wrapper team-avatar-wrapper">
+                        <div class="team-avatar" style="background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+                        <span class="badge badge-domestic">Testing & Research</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Chandan Pal</h3>
+                        <div class="roll-badge">
+                            <i class="fa-solid fa-id-card"></i> ID: 27631725023
+                        </div>
+                        <p class="team-role">Quality Assurance Specialist</p>
+                        <ul class="team-details">
+                            <li><i class="fa-solid fa-file-lines"></i> Abstract & Synopsis Drafting</li>
+                            <li><i class="fa-solid fa-quote-left"></i> Academic References & Citations</li>
+                            <li><i class="fa-solid fa-mobile-screen-button"></i> System Responsiveness & Cross-browser
+                                Testing</li>
                         </ul>
                     </div>
                 </div>
@@ -147,11 +185,58 @@
                 <i class="fa-solid fa-compass"></i>
                 <span>Travelstar</span>
             </div>
-            <p>Data Communication & Networks Mini Project — Developed by Nayan, Pranjal, Chandan, Kunal & Simi Mallick.</p>
+            <p>Data Communication & Networks Mini Project — Developed by Nayan, Pranjal, Kunal, Simi Mallick & Chandan
+                Pal.</p>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Travelstar Travel Project. Served securely over HTTP.</p>
         </div>
     </footer>
+
+    <!-- Interactive Filtering & Animations Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const teamCards = document.querySelectorAll('.team-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    button.classList.add('active');
+
+                    const filterValue = button.getAttribute('data-filter');
+
+                    teamCards.forEach(card => {
+                        const category = card.getAttribute('data-category');
+                        if (filterValue === 'all' || category === filterValue) {
+                            card.classList.remove('hidden-card');
+                            // Force a reflow to restart animation
+                            void card.offsetHeight;
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0) scale(1)';
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(15px) scale(0.95)';
+
+                            const handleTransitionEnd = (e) => {
+                                // Make sure we only trigger for opacity/transform
+                                if (card.classList.contains('hidden-card')) return;
+                                if (e.propertyName === 'opacity' || e.propertyName === 'transform') {
+                                    if (card.style.opacity === '0') {
+                                        card.classList.add('hidden-card');
+                                    }
+                                    card.removeEventListener('transitionend', handleTransitionEnd);
+                                }
+                            };
+                            card.addEventListener('transitionend', handleTransitionEnd);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
