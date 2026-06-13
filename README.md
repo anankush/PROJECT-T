@@ -194,9 +194,11 @@ If the Apache default page loads using the custom domain, the network infrastruc
 On the local client machine, create the project directory and files:
 
 ```
-project-website/
+PROJECT-T/
 ├── index.html
 └── style.css
+└── script.js
+└── dev.html
 ```
 
 > 💡 **Pro-tip:** Include a section on the website listing all team members and their roles — it's a great touch during live demos.
@@ -210,13 +212,13 @@ Use **SCP (Secure Copy Protocol)** over SSH to push files from the client to the
 1. **Navigate to the Project Folder:**
 
 ```bash
-cd path/to/project-website
+cd path/to/PROJECT-T
 ```
 
 2. **Transfer Files to the Server:**
 
 ```bash
-scp index.html style.css username@192.168.1.150:/var/www/html/
+scp index.html style.css script.js dev.html username@192.168.1.150:/var/www/html/
 ```
 
 > Replace `username` with the actual Ubuntu server user account and `192.168.1.150` with the assigned static IP.
@@ -352,6 +354,7 @@ PROJECT-T/
 ├── index.html        # Main webpage
 ├── style.css         # Stylesheet
 └── script.js         # JavaScript file
+└── dev.html          # Contributors Acknowledgement
 ```
 
 ---
