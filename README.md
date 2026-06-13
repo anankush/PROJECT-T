@@ -11,7 +11,6 @@ A complete guide to setting up, configuring, securing, and deploying a web serve
 - [Web Developer — Website Deployment](#-web-developer--website-deployment)
 - [Security Analyst — Firewall & Hardening](#-security-analyst--firewall--hardening)
 - [DevOps / Monitor — Logging & Stress Testing](#-devops--monitor--logging--stress-testing)
-- [Automation - Complete Bash Script](#-automated--script)
 
 ---
 
@@ -349,9 +348,10 @@ Compile all screenshots, command outputs, scan results, and benchmark statistics
 ## 📁 Project Structure
 
 ```
-project-website/
+PROJECT-T/
 ├── index.html        # Main webpage
-└── style.css         # Stylesheet
+├── style.css         # Stylesheet
+└── script.js         # JavaScript file
 ```
 
 ---
