@@ -11,6 +11,7 @@ A complete guide to setting up, configuring, securing, and deploying a web serve
 - [Web Developer — Website Deployment](#-web-developer--website-deployment)
 - [Security Analyst — Firewall & Hardening](#-security-analyst--firewall--hardening)
 - [DevOps / Monitor — Logging & Stress Testing](#-devops--monitor--logging--stress-testing)
+- [Automation - Complete Bash Script](#-automated--script)
 
 ---
 
